@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,34 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя веб-страница</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta name="description" content="Продажа валюты для игр. Лучшие предложения и услуги.">
+    <meta name="keywords" content="валюта, игры, продажа валюты, игровые ресурсы">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S5BT2Z4MY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5S5BT2Z4MY');
+    </script>
 </head>
 <body>
     <header>
         <h1>Добро пожаловать на мой сайт!</h1>
         <p>Мы продаем валюту для игр.</p>
     </header>
-    <section>
-        <h2>О нас</h2>
-        <p>Здесь будет информация о продаже валюты, преимущества и т.д.</p>
-    </section>
-    <footer>
-        <p>Контактная информация будет добавлена позже.</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя веб-страница</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
-        <p>Мы продаем валюту для игр.</p>
-    </header>
+    
     <nav>
         <ul>
             <li><a href="#about">О нас</a></li>
@@ -40,23 +33,40 @@
             <li><a href="#contact">Контакты</a></li>
         </ul>
     </nav>
+    
     <section id="about">
         <h2>О нас</h2>
         <p>Здесь будет информация о продаже валюты, преимущества и т.д.</p>
     </section>
+    
     <section id="services">
         <h2>Наши услуги</h2>
         <p>Описание услуг, которые мы предоставляем, и как их заказать.</p>
     </section>
+    
     <section id="contact">
         <h2>Контакты</h2>
-        <p>Контактная информация будет добавлена позже.</p>
+        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            
+            <input type="submit" value="Отправить">
+        </form>
     </section>
+    
+    <section>
+        <img src="images/example.jpg" alt="Пример изображения" style="width:100%; max-width:600px;">
+    </section>
+    
     <footer>
         <p>© 2024 Мой сайт. Все права защищены.</p>
+        <p>Контактная информация будет добавлена позже.</p>
     </footer>
 </body>
 </html>
-<img src="images/example.jpg" alt="Пример изображения">
-
-

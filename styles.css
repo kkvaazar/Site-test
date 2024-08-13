@@ -1,34 +1,6 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #000428, #004e92);
-    color: #fff;
-}
-
-header {
-    text-align: center;
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-section {
-    padding: 20px;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-}
-body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Mono', monospace; /* Обновлено на нужный шрифт */
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #000428, #004e92);
@@ -67,10 +39,12 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffcc00; /* Цвет при наведении */
+    text-decoration: underline; /* Добавлено для консистентности */
 }
 
 section {
