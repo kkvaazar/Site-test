@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
     <meta name="description" content="Продажа валюты для игр. Лучшие предложения и услуги.">
     <meta name="keywords" content="валюта, игры, продажа валюты, игровые ресурсы">
+    <meta name="author" content="Твое Имя">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S5BT2Z4MY"></script>
     <script>
@@ -46,15 +47,15 @@
     
     <section id="contact">
         <h2>Контакты</h2>
-        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" required>
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required>
             
             <label for="message">Сообщение:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <textarea id="message" name="message" rows="4" required></textarea>
             
             <input type="submit" value="Отправить">
         </form>
@@ -63,10 +64,62 @@
     <section>
         <img src="images/example.jpg" alt="Пример изображения" style="width:100%; max-width:600px;">
     </section>
-    
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="images/slide1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide3.jpg" style="width:100%">
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 2000); // Смена изображения каждые 2 секунды
+            }
+        </script>
+    </div>
+
     <footer>
         <p>© 2024 Мой сайт. Все права защищены.</p>
-        <p>Контактная информация будет добавлена позже.</p>
+        <div class="social-icons">
+            <a href="https://vk.com/твоя_страница" target="_blank">
+                <img src="images/vk-icon.png" alt="VK" style="width:30px;">
+            </a>
+            <a href="https://instagram.com/твоя_страница" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram" style="width:30px;">
+            </a>
+            <!-- Добавь больше иконок при необходимости -->
+        </div>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66bc72f0146b7af4a43a3183/1i5821vco';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
     </footer>
 </body>
 </html>
